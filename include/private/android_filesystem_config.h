@@ -71,6 +71,7 @@
 #define AID_SDCARD_R      1028  /* external storage read access */
 #define AID_CLAT          1029  /* clat part of nat464 */
 #define AID_LOOP_RADIO    1030  /* loop radio devices */
+#define AID_SMARTCARD     1031  /* smart card subsystem */
 
 #define AID_SHELL         2000  /* adb and debug shell user */
 #define AID_CACHE         2001  /* cache access */
@@ -138,7 +139,8 @@ static const struct android_id_info android_ids[] = {
     { "media_rw",  AID_MEDIA_RW, },
     { "vpn",       AID_VPN, },
     { "keystore",  AID_KEYSTORE, },
-    { "usb",       AID_USB, },
+    { "smartcard", AID_SMARTCARD, },
+	 { "usb",       AID_USB, },
     { "mtp",       AID_MTP, },
     { "gps",       AID_GPS, },
     { "inet",      AID_INET, },
